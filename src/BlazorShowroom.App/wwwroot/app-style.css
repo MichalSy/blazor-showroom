@@ -65,7 +65,7 @@
     html {
         block-size: 100%;
         color-scheme: light;
-        
+
         &[data-theme="dark"] {
             color-scheme: dark;
         }

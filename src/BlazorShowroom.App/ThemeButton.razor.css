@@ -13,7 +13,8 @@
     touch-action: manipulation;
     -webkit-tap-highlight-color: transparent;
     outline-offset: 5px;
-    & > svg {
+
+    &>svg {
         inline-size: 100%;
         block-size: 100%;
         stroke-linecap: round;
@@ -30,40 +31,40 @@
 }
 
 
-.theme-toggle:is(:hover, :focus-visible) .sun-and-moon > :is(.moon, .sun) {
+.theme-toggle:is(:hover, :focus-visible) .sun-and-moon> :is(.moon, .sun) {
     fill: var(--icon-fill-hover);
 }
 
-.theme-toggle:is(:hover, :focus-visible) .sun-and-moon > .sun-beams {
+.theme-toggle:is(:hover, :focus-visible) .sun-and-moon>.sun-beams {
     stroke: var(--icon-fill-hover);
 }
 
 
 
 .sun-and-moon {
-    & > :is(.moon, .sun, .sun-beams) {
+    &> :is(.moon, .sun, .sun-beams) {
         transform-origin: center center;
     }
 
-    & > :is(.moon, .sun) {
+    &> :is(.moon, .sun) {
         fill: var(--icon-fill);
     }
 
-    & > .sun-beams {
+    &>.sun-beams {
         stroke: var(--icon-fill);
         stroke-width: 2px;
     }
 
     [data-theme="light"] & {
-        & > .sun {
+        &>.sun {
             transform: scale(1.75);
         }
 
-        & > .sun-beams {
+        &>.sun-beams {
             opacity: 0;
         }
 
-        & > .moon > circle {
+        &>.moon>circle {
             transform: translateX(-7px);
 
             @supports (cx: 1) {
@@ -75,15 +76,15 @@
 
 
     [data-theme="dark"] & {
-        & > .sun {
+        &>.sun {
             transition: transform .5s var(--ease-elastic-3);
         }
 
-        & > .sun-beams {
+        &>.sun-beams {
             transition: transform .5s var(--ease-elastic-4), opacity .5s var(--ease-3);
         }
 
-        & .moon > circle {
+        & .moon>circle {
             transition: transform .25s var(--ease-out-5);
 
             @supports (cx: 1) {
@@ -93,18 +94,18 @@
     }
 
     [data-theme="light"] & {
-        & > .sun {
+        &>.sun {
             transform: scale(1.75);
             transition-timing-function: var(--ease-3);
             transition-duration: .25s;
         }
 
-        & > .sun-beams {
+        &>.sun-beams {
             transform: rotateZ(-25deg);
             transition-duration: .15s;
         }
 
-        & > .moon > circle {
+        &>.moon>circle {
             transition-delay: .25s;
             transition-duration: .5s;
         }
