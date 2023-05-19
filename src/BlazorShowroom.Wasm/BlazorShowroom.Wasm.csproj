@@ -4,9 +4,9 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <WasmEnableWebcil>true</WasmEnableWebcil>
+    <WasmEnableWebcil>false</WasmEnableWebcil>
     <InvariantGlobalization>true</InvariantGlobalization>
-    <RunAOTCompilation>true</RunAOTCompilation>
+    <RunAOTCompilation>false</RunAOTCompilation>
   </PropertyGroup>
 
   <ItemGroup>
