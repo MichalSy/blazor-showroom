@@ -103,7 +103,7 @@
         }
 
         &>.moon>circle {
-            transition-delay: .25s;
+            transition-delay: .1s;
             transition-duration: .5s;
         }
     }
