@@ -6,12 +6,24 @@
 
 nav {
     position: fixed;
-    left: 1.5rem;
-    top: 9rem;
+    left: 0rem;
+    width: 5rem;
+    top: 7.5rem;
+    bottom: 0;
+    display: grid;
+    justify-content: center;
+    grid-auto-flow: row;
+    /* background-color: red; */
+}
 
-    span {
-        font-size: 2rem;
-    }
+/* nav:hover {
+    background-color: #ffffff84;
+    width: 10rem;
+} */
+
+nav span {
+    font-size: 2rem;
+    line-height: 4rem;
 }
 
 main {
