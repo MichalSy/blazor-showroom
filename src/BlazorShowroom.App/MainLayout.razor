@@ -1,7 +1,17 @@
 @inherits LayoutComponentBase
 
-<div class="page">
-    <main>
-        @Body
-    </main>
+<div right-action-buttons>
+    <ThemeButton></ThemeButton>
 </div>
+
+<nav>
+    <NavLink class="nav-link" href="/" Match="NavLinkMatch.All">
+        <span class="material-icons">home</span>
+    </NavLink>
+</nav>
+
+<main>
+    <div>
+    @Body
+    </div>
+</main>

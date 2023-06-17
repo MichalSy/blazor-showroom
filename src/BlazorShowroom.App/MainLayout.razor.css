@@ -1,0 +1,26 @@
+[right-action-buttons] {
+    position: fixed;
+    right: 1rem;
+    top: 1rem;
+}
+
+nav {
+    position: fixed;
+    left: 1.5rem;
+    top: 9rem;
+
+    span {
+        font-size: 2rem;
+    }
+}
+
+main {
+    display: grid;
+    height: calc(100% - 7rem);
+    margin-left: 5rem;
+    margin-right: 2rem;
+    margin-top: 7rem;
+    background: hsla(0, 0%, 100%, 0.25);
+    padding: 1rem;
+    border-radius: 1rem;
+}
